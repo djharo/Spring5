@@ -12,5 +12,9 @@ public class MainController {
     public String hello() {
         return "Hello Controller";
     }
-
+    @ResponseBody
+    @GetMapping("/getGreeting")
+    public String getHello() {
+        return "Hello Controller";
+    }
 }
